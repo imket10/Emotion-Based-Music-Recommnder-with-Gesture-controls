@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emotion-Based Music Recommender</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <meta charset="UTF-8">
+  <title>Emotion-Based Music Recommender</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>Emotion-Based Music Recommender</h1>
-    <img id="video" src="{{ url_for('video_feed') }}" width="640" height="480">
-    <button id="stop">Stop</button>
-    <div id="song-container"></div>
+  <h1>🎵 Emotion-Based Music Recommender 🎵</h1>
 
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <div class="main-container">
+    <div class="video-wrapper">
+      <img id="video" src="{{ url_for('video_feed') }}">
+    </div>
+
+    <div id="song-container"></div>
+  </div>
+
+  <button id="stop">Stop & Recommend Song</button>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
+
 </html>
