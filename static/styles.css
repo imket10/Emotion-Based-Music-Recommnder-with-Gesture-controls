@@ -1,58 +1,97 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
+  font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://motionbgs.com/media/2887/nebula.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  color: rgb(0, 0, 0);
 }
 
+
+
 h1 {
-    color: #333;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 #video {
-    border: 5px solid #333;
-    border-radius: 10px;
-    margin-top: 20px;
+  width: 600px;
+  max-width: 90%;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-    border-radius: 5px;
+  background: linear-gradient(135deg, #42a5f5, #478ed1);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 button:hover {
-    background-color: #218838;
+  background: linear-gradient(135deg, #1976d2, #1565c0);
 }
 
 #song-container {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: white;
-    display: inline-block;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  padding: 25px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
 }
 
 #song-container img {
-    border-radius: 10px;
-    margin-top: 10px;
+  border-radius: 15px;
+  margin-top: 15px;
+  width: 100%;
+  height: auto;
 }
 
 #song-container a {
-    display: block;
-    text-decoration: none;
-    color: #007bff;
-    font-size: 18px;
-    margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #1e88e5;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
 }
 
 #song-container a:hover {
-    color: #0056b3;
+  color: #0d47a1;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.video-wrapper,
+#song-container {
+  flex: 1 1 400px;
+  max-width: 480px;
 }
