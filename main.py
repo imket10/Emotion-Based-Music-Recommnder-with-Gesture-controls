@@ -166,7 +166,21 @@ def stop_emotion_detection():
             "name": "Someone Like You by Adele",
             "url": "https://www.youtube.com/watch?v=hLQl3WQQoQ0",
             "thumbnail": "https://i.ytimg.com/vi/hLQl3WQQoQ0/hqdefault.jpg"
+        },
+
+        "fear": {
+            "name": "Lullaby of Woe",
+            "url": "https://youtu.be/ohNpf4VnlP8?feature=shared",
+            "thumbnail": "https://i.ytimg.com/vi/ohNpf4VnlP8/mqdefault.jpg"
+        },
+
+        "angry": {
+            "name": "Batman - WaterTower",
+            "url": "https://youtu.be/Cwcinb2OxUo?feature=shared",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs5n7oMnLqf7mec3FL_7RyKGd6zE2lwXRH7A&s"
         }
+
+        
     }.get(latest_emotion, {
         "name": "Perfect by Ed Sheeran",
         "url": "https://www.youtube.com/watch?v=2Vv-BfVoq4g",
